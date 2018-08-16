@@ -28,6 +28,7 @@ TEST(angram_test, solver) {
     EXPECT_EQ(false, anagram::Solver::isAnagram(str1, str3));
    
     // solving
+    std::cout << "Problem 1: [lint, intl, inlt, code, others]" << std::endl;
     std::vector<std::string> data = {"lint","intl","inlt","code","others"};
     anagram::Solver::printDuplicates(data);
     
@@ -37,7 +38,8 @@ TEST(house_robber_test, solver) {
     // testing data
     std::vector<int> data = {3, 6, 4};
     // solving
-    std::cout << house_robber::Solver::maxMoney(data) << std::endl;
+    std::cout << "Problem 2: [3, 6, 4]" << std::endl;
+    std::cout << "max money:" << house_robber::Solver::maxMoney(data) << std::endl;
     // testing
     EXPECT_EQ(6, house_robber::Solver::maxMoney(data));
 }
